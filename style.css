@@ -10,3 +10,45 @@ section {
 h1 {
   color: #ff0000;
 }
+
+/* Navbar styles */
+.navbar {
+  /* Make navbar stretch across the top */
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between; /* Space between title and link */
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.navbar-title {
+  color: #fff; /* White text for title */
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navbar-link {
+  color: #fff; /* White text for link */
+  text-decoration: none;
+  font-size: 1em;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.navbar-link:hover {
+  background-color: #555; /* Slightly lighter on hover */
+}
+
+/* Responsive: stack navbar items on small screens */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-link {
+    margin-top: 8px;
+  }
+}
