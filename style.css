@@ -1,54 +1,105 @@
-body {
-  height: 100vh;
-}
-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-h1 {
-  color: #ff0000;
-}
-
-/* Navbar styles */
-.navbar {
-  /* Make navbar stretch across the top */
-  width: 100%;
-  background-color: #333;
-  display: flex;
-  justify-content: space-between; /* Space between title and link */
-  align-items: center;
-  padding: 10px 20px;
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-.navbar-title {
-  color: #fff; /* White text for title */
-  font-size: 1.2em;
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
   font-weight: bold;
 }
 
-.navbar-link {
-  color: #fff; /* White text for link */
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.join-button {
+  background-color: #f9a825;
+  color: white;
+  padding: 10px 15px;
   text-decoration: none;
-  font-size: 1em;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: background 0.2s;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
-.navbar-link:hover {
-  background-color: #555; /* Slightly lighter on hover */
+/* Hero section */
+.hero {
+  display: flex;
+  background-color: #40bfff;
+  color: white;
+  padding: 60px 40px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Responsive: stack navbar items on small screens */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .navbar-link {
-    margin-top: 8px;
-  }
+.left {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.left h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 16px;
+  color: #d6f3ff;
+  margin-bottom: 30px;
+}
+
+.cta-box {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.cta-box input {
+  flex: 1;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  color: #999;
+}
+
+.cta-box button {
+  background-color: #f9a825;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Right image */
+.right {
+  flex: 1;
+  text-align: right;
+}
+
+.right img {
+  max-width: 100%;
+  border-radius: 10px;
 }
